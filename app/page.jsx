@@ -38,8 +38,8 @@ export default function Home() {
           <Image src={Banner} alt="Banner" className='object-cover' fill priority />
           <div className="absolute inset-0 bg-gray-800/60 z-10">
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
-              <h1 className="text-white text-4xl md:text-5xl py-4 font-bold uppercase mb-4">Descarte de Lixo Eletrônico Consciente!</h1>
-              <p className="text-white text-2xl py-4">Contribua para um mundo mais limpo e sustentável, descartando corretamente seus eletrônicos.</p>
+              <h1 className="text-white text-4xl md:text-5xl py-4 font-bold uppercase mb-4">Descarte de Resíduos em Sete Lagoas</h1>
+              <p className="text-white text-2xl py-4">Contribua para um mundo mais limpo e sustentável, descartando corretamente seus resíduos.</p>
               <p className="text-lg text-white italic py-4">&quot;A reciclagem de hoje, é o futuro de amanhã.&quot;</p>
               <Link
                 href='/pages/collectionPoints'
@@ -141,7 +141,7 @@ export default function Home() {
                 subtitle="Resíduos Sólidos (PEVs)"
                 description="Iniciativa da Prefeitura que oferece pontos fixos para o descarte gratuito de resíduos como entulho, móveis, metais e galhos em diversos bairros da cidade."
                 handleNavigation={handleNavigation}
-                link="/pages/point1"
+                link="/pages/point3"
               />
             </div>
           </div>

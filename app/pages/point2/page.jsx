@@ -1,45 +1,44 @@
 import Breadcrumb from "@/app/components/breadcrumb";
 import CollectionPoint from "@/app/components/collectionPoint";
 import Banner from '@/app/img/banner.jpg';
-import RSM from '@/app/img/reciclagem_santa_maria2.png';
 import RNS from '@/app/img/reciclagem_norte_sul.png';
+import RNS2 from '@/app/img/reciclagem_norte_sul2.png';
 
 export default function About() {
     return (
         <>
             <Breadcrumb
-                image={Banner}
+                image={RNS}
                 title="Reciclagem Norte Sul"
                 page="Reciclagem Norte Sul"
             />
             <CollectionPoint
                 title="Reciclagem Norte Sul"
                 description={[
-                    "Uma empresa mineira, fundada nos anos 60...",
-                    "Para melhor atender seus clientes...",
-                    "Especializada em gerenciamento de resíduos..."
+                    "A Reciclagem Norte Sul, oficialmente registrada como Reciclagem Ferro Velho Norte Sul LTDA, é uma empresa localizada em Sete Lagoas, Minas Gerais, especializada na recuperação e reciclagem de materiais metálicos e plásticos. Com atuação desde 2020, a empresa desempenha um papel importante na gestão de resíduos sólidos na região.",
+                    "A Reciclagem Norte Sul está comprometida com a sustentabilidade e a economia circular, oferecendo soluções eficientes para o reaproveitamento de resíduos e contribuindo para a preservação ambiental na região de Sete Lagoas."
                 ]}
-                image={RNS}
+                image={RNS2}
                 contacts={{
-                    phone: "5531999999999",
-                    phoneFormatted: "(31) 99999-9999",
-                    website: "https://www.reciclagemsantamaria.com.br",
-                    email: "contato@reciclagemstamaria.com.br",
-                    address: "Rua Otávio Campelo Ribeiro, 2800...",
-                    instagram: "https://www.instagram.com/reciclagemstmaria7lagoas/",
-                    whatsapp: "5531999999999"
+                    phone: "5531984089912",
+                    phoneFormatted: "(31) 98408-9912",
+                    website: "",
+                    email: "",
+                    addresses: [
+                        {
+                            address: "Rua Francisco Avelar, 61, Bairro Progresso, Sete Lagoas/MG, CEP 35701-130",
+                            mapLink: "https://maps.app.goo.gl/29PxArQzvMYeJBvG9"
+                        }
+                    ],
+                    instagram: "https://www.instagram.com/reciclagemnortesul/?hl=pt",
+                    whatsapp: "5531984089912"
                 }}
                 materials={[
-                    "Biomassa (Cavaco de madeira)",
-                    "Lâmpadas fluorescentes",
-                    "Papel e Papelão",
-                    "Vidro",
-                    "Borracha e Pneus",
-                    "Metais (alumínio, cobre e ferro)",
-                    "Plásticos"
+                    "Latas de Alumínio,",
+                    "Papel e Papelão,",
+                    "Plásticos."
                 ]}
-                mapUrl="https://maps.app.goo.gl/25Esw7ceVScCy7Dg7"
-                mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.6233318261993!2d-44.27322422448005!3d-19.471800281815927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa650f5ec6e0a9b%3A0x20cd0c38acbd8f82!2sAv.%20Ot%C3%A1vio%20Campelo%20Ribeiro%2C%202800a%20-%20b%20-%20Eldorado%2C%20Sete%20Lagoas%20-%20MG%2C%2035702-153!5e0!3m2!1spt-BR!2sbr!4v1747608697456!5m2!1spt-BR!2sbr"
+                mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.703380234222!2d-44.231532324480064!3d-19.468351481818683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa65a94ca9aa6a5%3A0x77037401ff4419fa!2sR.%20Francisco%20Avelar%2C%2061%20-%20Progresso%2C%20Sete%20Lagoas%20-%20MG%2C%2035701-130!5e0!3m2!1spt-BR!2sbr!4v1747867708395!5m2!1spt-BR!2sbr"
             />
         </>
     );

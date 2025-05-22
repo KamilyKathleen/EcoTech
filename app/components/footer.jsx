@@ -59,9 +59,9 @@ export default function Footer() {
                             </a> */}
                             <Link
                                 href='/pages/collectionPoints'
-                                className="text-xl text-white border-2 p-2 rounded hover:bg-white hover:text-green-600"
+                                className="px-4 py-2 font-semibold bg-white text-green-700 rounded hover:bg-gray-200 transition flex items-center justify-center"
                             >
-                                <FaRegTrashAlt size={24} className="inline"/> &nbsp;
+                                {/* <FaRegTrashAlt size={24} className="inline"/> &nbsp; */}
                                 Onde Descartar
                             </Link>
                         </div>

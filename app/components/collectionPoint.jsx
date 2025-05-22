@@ -71,14 +71,21 @@ export default function CollectionPoint({
                                             </Link>
                                         </p>
                                     )}
-                                    {contacts.address && (
-                                        <p className="text-sm md:text-lg">
-                                            <Link href={mapUrl || "#"} target="_blank" className="group inline-flex items-center">
-                                                <FaMapMarkerAlt className="size-8 inline mr-2 bg-green-600 text-white p-2 rounded-full group-hover:bg-green-700" />
-                                                <span className="group-hover:underline transition duration-200">{contacts.address}</span>
-                                            </Link>
-                                        </p>
+                                    {contacts.addresses && contacts.addresses.length > 0 && (
+                                        <div className="space-y-4">
+                                            {contacts.addresses.map((item, index) => (
+                                                <p key={index} className="text-sm md:text-lg">
+                                                    <Link href={item.mapLink || "#"} target="_blank" className="group inline-flex items-center">
+                                                        <FaMapMarkerAlt className="size-8 inline mr-2 bg-green-600 text-white p-2 rounded-full group-hover:bg-green-700" />
+                                                        <span className="group-hover:underline transition duration-200">
+                                                            {item.address}
+                                                        </span>
+                                                    </Link>
+                                                </p>
+                                            ))}
+                                        </div>
                                     )}
+
                                     {(contacts.instagram || contacts.whatsapp) && (
                                         <div className="flex items-center justify-center gap-2">
                                             {contacts.instagram && (

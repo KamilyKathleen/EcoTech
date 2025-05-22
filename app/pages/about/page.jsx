@@ -5,7 +5,7 @@ import Banner from '@/app/img/banner.jpg';
 import Emile from "@/app/img/emile.png";
 import LogoEmile from "@/app/img/emile2.png";
 import Placeholder from "@/app/img/placeholder.webp";
-import Teste from "@/app/img/teste.jpg";
+import Grupo from "@/app/img/foto_grupo.jpg";
 import E_Waste from "@/app/img/e-waste1.webp";
 import E_Waste2 from "@/app/img/e-waste2.png";
 import FloatingCard from "@/app/components/card";
@@ -34,7 +34,7 @@ export default function About() {
                 </div>
                 <div className="md:w-1/2">
                     <div className='w-full'>
-                        <Image src={Teste} alt="Foto do grupo" className="bg-cover" />
+                        <Image src={Grupo} alt="Foto do grupo" className="bg-cover" />
                     </div>
                 </div>
             </div>
