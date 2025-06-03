@@ -61,13 +61,13 @@ export default function CollectionPointsForm() {
                     </div>
                     {/* Address / Cep */}
                     <div className="w-[80%] mx-auto py-3">
-                        <label className="block text-sm font-medium text-gray-700 mb-1">Local onde deseja descartar</label>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">CEP</label>
                         <input
                             type="text"
                             className="w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-green-600 focus:border-transparent transition"
                             required
                             value={cep}
-                            placeholder=""
+                            placeholder="35700-642"
                             onChange={(e) => setCep(e.target.value)}
                         />
                         <Link

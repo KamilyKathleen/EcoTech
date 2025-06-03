@@ -1,14 +1,15 @@
 import Breadcrumb from "@/app/components/breadcrumb";
 import CollectionPoint from "@/app/components/collectionPoint";
 import Banner from '@/app/img/banner.jpg';
-import RNS from '@/app/img/reciclagem_norte_sul2.png';
 import PEV from '@/app/img/pev1.jpg';
+import PEV1 from '@/app/img/pev2.png';
+import PEV2 from '@/app/img/pev3.jpg';
 
-export default function About() {
+export default function PEVs() {
     return (
         <>
             <Breadcrumb
-                image={Banner}
+                image={PEV2}
                 title="Entrega Voluntária de Resíduos Sólidos"
                 page="Entrega Voluntária de Resíduos Sólidos (PEVs)"
             />
@@ -18,7 +19,7 @@ export default function About() {
                     "A Prefeitura de Sete Lagoas, por meio da Secretaria Municipal de Meio Ambiente, Desenvolvimento Econômico e Turismo, disponibiliza à população diversos pontos fixos para a entrega voluntária de resíduos sólidos. A iniciativa visa facilitar o descarte correto de materiais como entulho de construção, metais, madeira e móveis velhos, contribuindo para a preservação do meio ambiente e a melhoria da qualidade de vida da população.",
                     "Localizados em pontos estratégicos da cidade, nos bairros Orozimbo Macedo, Nova Cidade, CDI II e Verde Vale, os Pontos de Entrega Voluntária (PEVs) oferecem uma alternativa prática e segura para que os cidadãos possam descartar seus resíduos de forma adequada. "
                 ]}
-                image={PEV}
+                image={PEV1}
                 contacts={{
                     phone: "",
                     phoneFormatted: "",
@@ -55,7 +56,7 @@ export default function About() {
                     "Isopor,",
                     "Gesso"
                 ]}
-                mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3762.8377663644346!2d-44.235225124786005!3d-19.41941438185721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDI1JzA5LjkiUyA0NMKwMTMnNTcuNSJX!5e0!3m2!1spt-BR!2sbr!4v1747870608012!5m2!1spt-BR!2sbr"
+                mapEmbedUrl="https://www.google.com/maps/d/u/0/embed?mid=1ZM7918bsU3zx5Km1XThH-LBtsPVM4qc&ehbc=2E312F&noprof=1"
             />
         </>
     );

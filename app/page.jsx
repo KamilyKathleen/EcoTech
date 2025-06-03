@@ -5,11 +5,14 @@ import Banner from '@/app/img/banner.jpg'
 import RNS from '@/app/img/reciclagem_norte_sul.png';
 import RSM from '@/app/img/reciclagem_santa_maria.png';
 import PEV from '@/app/img/pev1.jpg';
+import CB from '@/app/img/casas_bahia.webp';
+import Bretas from '@/app/img/bretas1.jpg';
 import FloatingCard from './components/card';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useUnits } from './context/Units';
 import { useIsMobile } from './hooks/useIsMobile';
+import Placeholder from '@/app/img/placeholder.webp';
 
 function WhyUsCard({ title, description }) {
   return (
@@ -142,6 +145,22 @@ export default function Home() {
                 description="Iniciativa da Prefeitura que oferece pontos fixos para o descarte gratuito de resíduos como entulho, móveis, metais e galhos em diversos bairros da cidade."
                 handleNavigation={handleNavigation}
                 link="/pages/point3"
+              />
+              <FloatingCard
+                image={CB}
+                title="Casas"
+                subtitle="Bahia"
+                description="Em parceria com a Green Eletron, disponibiliza um ponto de coleta para descarte gratuito de pequenos eletrônicos, promovendo sustentabilidade e economia circular."
+                handleNavigation={handleNavigation}
+                link="/pages/point4"
+              />
+              <FloatingCard
+                image={Bretas}
+                title="Supermercados"
+                subtitle="Bretas"
+                description="Oferece um ponto de coleta para pequenos eletrônicos fora de uso, contribuindo com a preservação do meio ambiente e o descarte responsável."
+                handleNavigation={handleNavigation}
+                link="/pages/point5"
               />
             </div>
           </div>

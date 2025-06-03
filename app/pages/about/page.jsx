@@ -60,25 +60,28 @@ export default function About() {
 
             <div className="w-[90%] mx-auto space-y-8 mb-8">
                 <h2 className="text-2xl font-semibold text-center mb-4">Nossos Objetivos</h2>
-                <p className="text-lg text-center leading-relaxed mb-8">Vale ressaltar que os equipamentos que serão recolhidos vão ser aqueles relacionados a informática, como: bilhas, baterias, cabos de carregadores, fones de ouvido, desktops, notebooks, mouse, controles, dentre outros.</p>
+                <p className="text-lg md:text-justify leading-relaxed">Nosso projeto nasce com um propósito claro: <span className="font-semibold">facilitar o descarte correto de resíduos recicláveis em Sete Lagoas</span> e promover uma mudança real na forma como a cidade lida com o lixo. Acreditamos que pequenas atitudes geram grandes transformações — e tudo começa com informação e acesso.</p>
+                <p className="text-lg md:text-justify leading-relaxed">Queremos que a população tenha à disposição um sistema prático e confiável para descobrir onde descartar corretamente <span className="font-semibold">todos os tipos de resíduos recicláveis</span>, como plástico, papel, vidro, metal, óleo de cozinha, eletrônicos, pilhas, entre outros.</p>
+                <p className="text-lg md:text-justify leading-relaxed">Nosso objetivo vai além do mapeamento. Buscamos <span className="font-semibold">criar uma cultura de responsabilidade ambiental</span>, conectando cidadãos, escolas, empresas e instituições públicas em torno de um compromisso comum: <span className="font-semibold">reduzir o impacto ambiental, incentivar a reciclagem e cuidar do futuro da nossa cidade</span>.</p>
+                <p className="text-lg md:text-justify leading-relaxed">Ao reunir em um só lugar os pontos de coleta existentes, esclarecer dúvidas sobre o descarte e divulgar ações sustentáveis locais, queremos que Sete Lagoas se torne <span className="font-semibold">exemplo de consciência ecológica e inovação social.</span></p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     <FloatingCard
                         image={E_Waste2}
-                        title="Ampliar a"
-                        subtitle="Conscientização"
-                        description="Informar os alunos, professores e funcionários sobre os impactos negativos do descarte inadequado de eletrônicos de informática no meio ambiente e na saúde pública."
+                        title="Promover a"
+                        subtitle="Educação Ambiental"
+                        description="Conscientizar a comunidade sobre a importância da separação correta do lixo e os impactos ambientais causados pelo descarte inadequado de resíduos como papel, vidro, plástico, metais, eletrônicos, óleo de cozinha, pilhas, entre outros."
                     />
                     <FloatingCard
                         image={E_Waste}
-                        title="Facilitação do"
-                        subtitle="Descarte"
-                        description="Disponibilizar um ponto fixo de coleta na faculdade para que a comunidade possa descartar corretamente dispositivos eletrônicos de informática que não são mais utilizados."
+                        title="Mapear os"
+                        subtitle="Pontos de Coleta"
+                        description="Criar e manter um mapa digital interativo com todos os locais de coleta seletiva e reciclagem na cidade, incluindo cooperativas, ecopontos, supermercados, postos de gasolina e ações temporárias promovidas por escolas e ONGs."
                     />
                     <FloatingCard
                         image={LogoEmile}
-                        title="Parceria com a "
-                        subtitle="E-Mile"
-                        description="Ao final de cada semestre, a empresa Emile será responsável pelo recolhimento dos itens coletados para a reciclagem adequada."
+                        title="Estimular "
+                        subtitle="Parcerias Locais"
+                        description="Estabelecer conexões com empresas, órgãos públicos, instituições de ensino e iniciativas comunitárias que já promovem ações de sustentabilidade, ampliando o alcance do projeto."
                     />
                 </div>
             </div>

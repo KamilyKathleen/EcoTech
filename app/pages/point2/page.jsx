@@ -4,7 +4,7 @@ import Banner from '@/app/img/banner.jpg';
 import RNS from '@/app/img/reciclagem_norte_sul.png';
 import RNS2 from '@/app/img/reciclagem_norte_sul2.png';
 
-export default function About() {
+export default function ReciclagemNorteSul() {
     return (
         <>
             <Breadcrumb

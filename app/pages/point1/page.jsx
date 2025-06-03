@@ -4,7 +4,7 @@ import Banner from '@/app/img/banner.jpg';
 import RSM from '@/app/img/reciclagem_santa_maria2.png';
 import RSM2 from '@/app/img/reciclagem_santa_maria1.png';
 
-export default function About() {
+export default function ReciclagemSantaMaria() {
     return (
         <>
             <Breadcrumb

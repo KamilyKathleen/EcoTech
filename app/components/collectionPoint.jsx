@@ -30,7 +30,7 @@ export default function CollectionPoint({
                         ))}
                     </div>
                     {image && (
-                        <div className="md:w-1/2 p-4">
+                        <div className="md:w-1/2 p-4 center">
                             <Image src={image} alt={`Imagem de ${title}`} className="rounded-lg shadow-lg max-h-[500px] w-auto" />
                         </div>
                     )}
@@ -132,7 +132,7 @@ export default function CollectionPoint({
                         <iframe
                             src={mapEmbedUrl}
                             width="100%"
-                            height="450"
+                            height="550"
                             allowFullScreen
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"

@@ -13,7 +13,9 @@ export default function CollectionPoints() {
             />
             <div className="w-[90%] mx-auto space-y-4">
                 <h1 className="text-3xl font-bold text-center uppercase my-4">Descubra onde descartar seus resíduos</h1>
-                <p className="text-lg text-justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.</p>
+                <p className="text-lg text-justify">Você sabia que o descarte incorreto de equipamentos eletrônicos pode causar sérios danos ao meio ambiente? Pensando nisso, desenvolvemos uma ferramenta prática que ajuda você a encontrar o ponto de coleta mais próximo de acordo com o tipo de material eletrônico que deseja descartar.</p>
+                <p className="text-lg text-justify">Basta selecionar o tipo de resíduo, digitar seu CEP e clicar em Enviar. O sistema irá filtrar automaticamente os pontos de coleta mais próximos e adequados para receber o seu material.</p>
+                <p className="text-lg text-justify">Com apenas alguns cliques, você contribui para um futuro mais sustentável e ajuda a dar o destino certo para aquilo que já não tem mais utilidade, mas ainda tem valor para o planeta.</p>
                 <div>
                     <CollectionPointsForm />
                 </div>
