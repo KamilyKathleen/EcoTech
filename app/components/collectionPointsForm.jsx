@@ -1,42 +1,32 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function CollectionPointsForm() {
 
-    const [material, setMaterial] = useState("");
+    const [materials, setMaterials] = useState([]);
+    const [selectedMaterial, setSelectedMaterial] = useState("");
     const [cep, setCep] = useState("");
-    const [message, setMessage] = useState("");
+
+    useEffect(() => {
+        const fetchMaterials = async () => {
+            try {
+                const res = await fetch('/api/materials');
+                const data = await res.json();
+                setMaterials(data);
+            } catch (error) {
+                console.error("Erro ao buscar materiais:", error);
+            }
+        };
+        fetchMaterials();
+    },[]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        // EmailJS
-        const serviceId = 'service_zoaykaw';
-        const templateId = 'template_qlnp87r';
-        const publicKey = 'Vk48iuuKTe65SLA5O';
-
-        const templateParams = {
-            to_name: 'Coleta de Lixo Eletrônico',
-            from_name: material,
-            from_email: cep,
-            message: message,
-        }
-
-        emailjs.send(serviceId, templateId, templateParams, publicKey)
-            .then((response) => {
-                console.log('Email enviado com sucesso!', response);
-                alert('Email enviado com sucesso!');
-                setMaterial('');
-                setCep('');
-                setMessage('');
-            })
-            .catch((error) => {
-                console.error('Erro ao enviar o email: ', error);
-            });
+        console.log("Material selecionado:", selectedMaterial);
+        console.log("CEP:", cep);
     }
-
 
     return (
         <>
@@ -46,17 +36,17 @@ export default function CollectionPointsForm() {
                     <div className="w-[80%] mx-auto py-3">
                         <label className="block text-sm font-medium text-gray-700 mb-1">Material a ser descartado</label>
                         <select 
-                        className="w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-green-600 focus:border-transparent transition"
-                        required
-                        value={material}
-                        onChange={(e) => setMaterial(e.target.value)}
+                            className="w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-green-600 focus:border-transparent transition"
+                            required
+                            value={selectedMaterial}
+                            onChange={(e) => setSelectedMaterial(e.target.value)}
                         >
                             <option value="" hidden>Selecione</option>
-                            <option value="Lixo Eletrônico">Lixo Eletrônico</option>
-                            <option value="Metal">Metal</option>
-                            <option value="Vidro">Vidro</option>
-                            <option value="Papel">Papel</option>
-                            <option value="Plástico">Plástico</option>
+                            {materials.map(material => (
+                                <option key={material._id} value={material._id}>
+                                    {material.material}
+                                </option>
+                            ))}
                         </select>
                     </div>
                     {/* Address / Cep */}
@@ -78,15 +68,6 @@ export default function CollectionPointsForm() {
                             Não sabe seu CEP?
                         </Link>
                     </div>
-                    {/* <div className="w-[80%] mx-auto py-3">
-                        <label>Mensagem</label>
-                        <textarea
-                            className="w-full py-1 pl-2 bg-white rounded"
-                            required
-                            value={message}
-                            onChange={(e) => setMessage(e.target.value)}
-                        />
-                    </div> */}
                     <div className="w-[80%] mx-auto py-3">
                         <button
                             className="w-full py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-md text-lg shadow-md transition duration-300 ease-in-out"
