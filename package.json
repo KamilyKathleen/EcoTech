@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroui/accordion": "^2.2.16",
+    "@react-google-maps/api": "^2.20.6",
     "mongodb": "^6.17.0",
     "mongoose": "^8.15.1",
     "next": "15.3.1",

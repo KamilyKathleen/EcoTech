@@ -6,6 +6,8 @@ const collectionPoints = new Schema({
     name: { type: String, required: true },
     address: { type: [String], required: true },
     zipCode: { type: [String], required: true },
+    latitude: { type: [Number], required: true },
+    longitude: { type: [Number], required: true },
     phoneNumber: { type: [String], required: false },
     email: { type: String, required: false },
     website: { type: String, required: false },

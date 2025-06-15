@@ -24,3 +24,17 @@ export async function POST(request) {
         );
     }
 }
+
+export async function GET() {
+    try {
+        await connectToDatabase();
+        const points = await CollectionPoints.find();
+        return NextResponse.json(points, { status: 200 });
+    } catch (error) {
+        console.error("Erro ao buscar pontos:", error);
+        return NextResponse.json(
+            { message: "Erro ao buscar pontos de coleta." },
+            { status: 500 }
+        );
+    }
+}

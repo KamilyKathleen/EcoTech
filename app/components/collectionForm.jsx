@@ -10,6 +10,8 @@ export default function CollectionForm() {
 
     const [addresses, setAddresses] = useState([""]);
     const [zipCodes, setZipCodes] = useState([""]);
+    const [latitudes, setLatitudes] = useState([""]);
+    const [longitudes, setLongitudes] = useState([""]);
     const [phones, setPhones] = useState([""]);
 
     const [materials, setMaterials] = useState([]);
@@ -47,6 +49,8 @@ export default function CollectionForm() {
             instagram,
             address: addresses.filter(item => item.trim() !== ""),
             zipCode: zipCodes.filter(item => item.trim() !== ""),
+            latitude: latitudes.filter(item => item.trim() !== ""),
+            longitude: longitudes.filter(item => item.trim() !== ""),
             phoneNumber: phones.filter(item => item.trim() !== ""),
             discardedMaterials: selectedMaterials
         };
@@ -131,6 +135,8 @@ export default function CollectionForm() {
                     />
                     {renderDynamicFields("CEP", zipCodes, setZipCodes)}
                     {renderDynamicFields("Endereço", addresses, setAddresses)}
+                    {renderDynamicFields("Latitude", latitudes, setLatitudes)}
+                    {renderDynamicFields("Longitude", longitudes, setLongitudes)}
                     <label className="block text-sm font-medium text-gray-700 mb-1">Site</label>
                     <input
                         type="text"
