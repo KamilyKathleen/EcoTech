@@ -70,7 +70,7 @@ export default function MapContainer({ selectedMaterial, cep }) {
             {isLoaded && (
                 <GoogleMap
                     mapContainerStyle={{ width: '100%', height: '500px' }}
-                    center={{ lat: -19.458364032871316, lng: -44.24369692274613 }}
+                    center={{ lat: -19.444548203647727, lng: -44.23819169073505 }}
                     zoom={13}
                 >
                     {points.map((point, index) =>
